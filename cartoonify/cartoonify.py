@@ -52,7 +52,8 @@ def cartoonify(image_path):
     global Resized6
     Resized6=cv2.resize(cartoonimage,(960,540))
     plt.imshow(Resized6,cmap='gray')
-    
+    t='Image cartoonified! Click on save your image to save'
+    tk.messagebox.showinfo(title="Done",message=t)
 
 
 def upload():
